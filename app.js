@@ -10,7 +10,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://gilbertreyes:vortinger_01@mongo-cluster-shard-00-00-esak9.mongodb.net:27017,mongo-cluster-shard-00-01-esak9.mongodb.net:27017,mongo-cluster-shard-00-02-esak9.mongodb.net:27017/loginapp?ssl=true&replicaSet=mongo-cluster-shard-0&authSource=admin');
+mongoose.connect('mongodb://gilbertreyes:vortinger_01@ds237989.mlab.com:37989/loginapp');
 var db = mongoose.connection;
 
 var routes = require('./routes/index');
